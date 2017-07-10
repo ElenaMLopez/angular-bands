@@ -2,7 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
+  padding-top: 25px;
+  position: fixed;
+  margin-top: 0;
+  z-index: 100;
+  width: 100%;
 }
 .go-home{
   font-family: $title-text;
@@ -12,4 +16,30 @@
 }
 .menu-icon{
   width: 40px;
+}
+.headder-nav-list{
+  font-family: $title-text;
+  width: 20%;
+  position: fixed;
+  z-index: 99;
+  margin-top: 100px;
+  right: 0;
+  background-color: $secondary-color;
+  animation: menu 1s linear;
+}
+@keyframes menu {
+
+0% {
+   transform: translateX(150%);
+ }
+ 70% {
+     transform: translateX(-20%);
+ }
+ 100% {
+      transform: translateX(0);
+ }
+}
+
+.headder-list{
+  list-style: none;
 }

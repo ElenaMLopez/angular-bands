@@ -6,9 +6,10 @@
         "components/_backgrounds";
 @import "layouts/footer",
         "layouts/headder",
-        "layouts/modal";
-@import "pages/beatles",
-        "pages/queen",
-        "pages/rolling-stones",
-        "pages/construction",
-        "pages/index";
+        "layouts/modal",
+        "layouts/group-info";
+@import "pages/index",
+        "pages/construction";
+        // "pages/beatles",
+        // "pages/queen",
+        // "pages/rolling-stones",
