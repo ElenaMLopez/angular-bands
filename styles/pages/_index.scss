@@ -8,13 +8,18 @@
   & h1{
     margin-top: 50px;
     color: black;
+    font-size: $extra-large;
+    font-family: $title-text;
+    color:$main-color;
+    background-color: black;
+    padding: 10px;
   }
 }
 
 
 .band-list{
   background-color: $transparent-secondary-color;
-  font-size: $h2-font;
+  font-size: $h1-font;
   font-family: $title-text;
   list-style: none;
   width: 40%;
@@ -23,6 +28,8 @@
   margin-top: 100px;
   margin-bottom: 350px;
   padding-left: 200px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   min-width: 200px;
   min-height: 200px;
   display: flex;
