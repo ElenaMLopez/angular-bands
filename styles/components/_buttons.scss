@@ -10,14 +10,15 @@
   margin-right: 20px;
   width: 40px;
   cursor: pointer;
-    & :hover{
-      color: black;
-  }
 }
+
 
 .modal-button,
 .pic-button{
   width: 100%;
+}
+.pic-button{
+  margin: 0;
 }
 
 .close-button{

@@ -9,15 +9,13 @@
   margin-right: 20px;
   width: 40px;
   cursor: pointer; }
-  .hamburger-button :hover,
-  .modal-button :hover,
-  .pic-button :hover,
-  .close-button :hover {
-    color: black; }
 
 .modal-button,
 .pic-button {
   width: 100%; }
+
+.pic-button {
+  margin: 0; }
 
 .close-button {
   margin-right: 20px;
