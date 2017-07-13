@@ -1,113 +1,114 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <meta charset="utf-8">
-  <title>The Beatles</title>
-  <link rel="stylesheet" href="styles/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
-  <link rel="shortcut icon" href="images/favicon.ico">
-  <!-- hay q meter link para angular, pq creo q sí
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
--->
-<!-- SEO -->
-<!-- Open graph -->
+  <head>
+    <meta charset="utf-8">
+    <title>The Beatles</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Oswald" rel="stylesheet">
+    <link rel="shortcut icon" href="images/favicon.ico">
 
-<meta property="og:type" content="web site">
-<meta property="og:title" content="The Beatles y la mejor música del siglo XX">
-<meta property="og:url" content="http://angularrocks.com/beatles.html/">
-<meta property="og:image" content="http://angularrocks.com/images/beatles.jpg/">
-<meta property="og:image:width" content="300">
-<meta property="og:image:heigth" content="300">
-<meta property="og:locate" content="es ES">
-<meta property="og:locate:alternate" content="en UK">
-<!-- Metadatos -->
+   
+   <!-- SEO -->
+    <!-- Open graph -->
 
-<meta name="description" content="angular rocks-genial musica del siglo XX-queen" />
-<meta name="keywords" content="Angular rocks, , Musica, XX, beatles, John Lennon, Paul McCartney,George Harrison, Ringo Starr, rolling stones, queen, doors, velvet underground, mejor musica" />
-<meta name=”robots” content="index, follow">
-<!--Fin de metadatos -->
+    <meta property="og:type" content="web site">
+    <meta property="og:title" content="The Beatles y la mejor música del siglo XX">
+    <meta property="og:url" content="http://angularrocks.com/beatles.html/">
+    <meta property="og:image" content="http://angularrocks.com/images/beatles.jpg/">
+    <meta property="og:image:width" content="300">
+    <meta property="og:image:heigth" content="300">
+    <meta property="og:locate" content="es ES">
+    <meta property="og:locate:alternate" content="en UK">
+    <!-- Metadatos -->
 
-</head>
+    <meta name="description" content="angular rocks-genial musica del siglo XX-queen" />
+    <meta name="keywords" content="Angular rocks, , Musica, XX, beatles, John Lennon, Paul McCartney,George Harrison, Ringo Starr, rolling stones, queen, doors, velvet underground, mejor musica" />
+    <meta name=”robots” content="index, follow">
+    <!--Fin de metadatos -->
 
-<body >
-  <section ng-app="menuOpen" ng-controller="menuController" class="group-container">
+  </head>
 
-    <header  class="headder">
-      <div class="go-home">
-        <p><a href="index.html">HOME</a></p>
-      </div>
-      <div class="headder-menu-icon" >
-        <button ng-click="visible=!visible;" class="hamburger-button" type="button">
-          <img class="menu-icon" src="images/images.svg#Menu" alt="menu">
-        </button>
-      </div>
+  <body >
+    <section ng-app="menuOpen" ng-controller="menuController" class="group-container">
 
-    </header>
+      <header  class="headder">
 
-    <!--  Menu oculto -->
-    <div ng-class="{'hidden':!visible}" class="headder-nav-list">
-      <ul class="headder-list ">
-        <li class="list-element"><a href="the-rolling-stones.html">The Rolling Stones</a></li>
-        <li class="list-element"><a href="the-beatles.html">The Beatles</a></li>
-        <li class="list-element"><a href="queen.html">Queen</a></li>
-        <li class="list-element"><a href="foo.html">Foo</a></li>
-        <li class="list-element"><a href="bar.html">Bar</a></li>
-      </ul>
-    </div>
-
-
-
-    <article class="main-article">
-      <div>
-        <h1 class="group-title">THE BEATLES</h1>
-      </div>
-      <div class="group">
-
-
-        <div class="group-video">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/krIus0i9xn8?rel=0&amp;showinfo=0&start=8" frameborder="0" allowfullscreen></iframe>
+        <div class="go-home">
+          <p><a href="index.html">HOME</a></p>
         </div>
 
-        <article class="group-info">
-          <p class="info-text">The Beatles fue una banda de pop/rock inglesa activa durante la década de 1960, y reconocida como la más exitosa
-            comercialmente y la más alabada por la crítica en la historia de la música popular. Formada en Liverpool,
-            estuvo constituida desde 1962 por John Lennon (guitarra rítmica, vocalista), Paul McCartney (bajo, vocalista),
-            George Harrison (guitarra solista, vocalista) y Ringo Starr (batería, vocalista). Enraizada en el skiffle y el rock
-            and roll de los años 1950, la banda trabajó más tarde con distintos géneros musicales, que iban desde las baladas
-            pop hasta el rock psicodélico, incorporando a menudo elementos clásicos, entre otros, de forma innovadora en sus
-            canciones. La naturaleza de su enorme popularidad, que había emergido primeramente con la moda de la «Beatlemanía»,
-            se transformó al tiempo que sus composiciones se volvieron más sofisticadas. Llegaron a ser percibidos como la
-            encarnación de los ideales progresistas, extendiendo su influencia en las revoluciones sociales y culturales de la
-            década de 1960.
-          </p>
-          <p><a href="https://es.wikipedia.org/wiki/The_Beatles" target="_blank">MAS INFO...</a></p>
+        <div class="headder-menu-icon" >
+          <button ng-click="visible=!visible;" class="hamburger-button" type="button">
+            <img class="menu-icon" src="images/images.svg#Menu" alt="menu">
+          </button>
+        </div>
 
-          <div class="play-list">
-            <p><a href="https://www.youtube.com/watch?v=krIus0i9xn8&index=1&list=RDkrIus0i9xn8"target="_blank">PLAY LIST!</a></p>
+      </header>
 
-          </div>
-          <div>
-            <a href="https://commons.wikimedia.org/wiki/The_Beatles#/media/File:The_Fabs.JPG" target="_blank">
-              <img class="group-pic" src="images/beatles.jpg" alt="beatles picture">
-            </a>
-          </div>
+      <!--  Menu oculto -->
+      <div ng-class="{'hidden':!visible}" class="headder-nav-list">
 
-        </article>
+        <ul class="headder-list ">
+          <li class="list-element"><a href="the-rolling-stones.html">The Rolling Stones</a></li>
+          <li class="list-element"><a href="the-beatles.html">The Beatles</a></li>
+          <li class="list-element"><a href="queen.html">Queen</a></li>
+          <li class="list-element"><a href="foo.html">Foo</a></li>
+          <li class="list-element"><a href="bar.html">Bar</a></li>
+        </ul>
+
       </div>
 
-    </article>
+      <article class="main-article">
 
-    <footer class="footer">
-      <p>Elena Mateos López</p>
-      <p>2017</p>
-      <p>Agreements:</p>
-      <div>Icons made by <a href="http://www.flaticon.com/authors/bryn-taylor" title="Bryn Taylor">Bryn Taylor</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-      <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
-    </footer>
-  </section>
+        <div>
+          <h1 class="group-title">THE BEATLES</h1>
+        </div>
 
-  <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
-  <script src="js/menu.js" charset="utf-8"></script>
+        <div class="group">
+          <div class="group-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/krIus0i9xn8?rel=0&amp;showinfo=0&start=8" frameborder="0" allowfullscreen></iframe>
+          </div>
 
-</body>
+          <article class="group-info">
+              <p class="info-text">The Beatles fue una banda de pop/rock inglesa activa durante la década de 1960, y reconocida como la más exitosa
+                comercialmente y la más alabada por la crítica en la historia de la música popular. Formada en Liverpool,
+                estuvo constituida desde 1962 por John Lennon (guitarra rítmica, vocalista), Paul McCartney (bajo, vocalista),
+                George Harrison (guitarra solista, vocalista) y Ringo Starr (batería, vocalista). Enraizada en el skiffle y el rock
+                and roll de los años 1950, la banda trabajó más tarde con distintos géneros musicales, que iban desde las baladas
+                pop hasta el rock psicodélico, incorporando a menudo elementos clásicos, entre otros, de forma innovadora en sus
+                canciones. La naturaleza de su enorme popularidad, que había emergido primeramente con la moda de la «Beatlemanía»,
+                se transformó al tiempo que sus composiciones se volvieron más sofisticadas. Llegaron a ser percibidos como la
+                encarnación de los ideales progresistas, extendiendo su influencia en las revoluciones sociales y culturales de la
+                década de 1960.
+              </p>
+              <p><a href="https://es.wikipedia.org/wiki/The_Beatles" target="_blank">MAS INFO...</a></p>
+
+              <div class="play-list">
+                 <p><a href="https://www.youtube.com/watch?v=krIus0i9xn8&index=1&list=RDkrIus0i9xn8"target="_blank">PLAY LIST!</a></p>
+
+              </div>
+              <div>
+                 <a href="https://commons.wikimedia.org/wiki/The_Beatles#/media/File:The_Fabs.JPG" target="_blank">
+                   <img class="group-pic" src="images/beatles.jpg" alt="beatles picture">
+                 </a>
+              </div>
+
+          </article>
+        </div>
+
+      </article>
+
+      <footer class="footer">
+        <p>Elena Mateos López</p>
+        <p>2017</p>
+        <p>Agreements:</p>
+        <div>Icons made by <a href="http://www.flaticon.com/authors/bryn-taylor" title="Bryn Taylor">Bryn Taylor</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+        <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+      </footer>
+    </section>
+
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.19/angular.min.js"></script>
+    <script src="js/menu.js" type="text/javascrip" charset="utf-8"></script>
+
+  </body>
 </html>
